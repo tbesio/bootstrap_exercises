@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photogram</title>
+
+  <!-- Adds Bootstrap CSS  -->
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- Adds Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <!-- Adds your custom styles -->
+
+  <link rel="stylesheet" type="text/css" href="my_styles.css">
+
+  <!-- Adds Bootstrap Javascript -->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav>
+    <ul>
+      <li>
+        <a href="/timeline">
+          Timeline
+        </a>
+      </li>
+      <li>
+        <a href="/my_favorites">
+          Favorites
+        </a>
+      </li>
+      <li>
+        <a href="/photos/new">
+          New Photo
+        </a>
+      </li>
+      <li>
+        <a href="/users">
+          Users
+        </a>
+      </li>
+      <li>
+        <a href="/users/edit">Signed in as Raghu Betina</a>
+      </li>
+      <li>
+        <a href="/users/sign_out">Sign out</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div> <!-- Main content container -->
+    <div> <!-- Sign-in confirmation alert -->
+      <p>Signed in successfully.</p>
+    </div>
+
+    <hr>
+
+    <div> <!-- First photo -->
+      <div> <!-- Photo owner info container -->
+        <a href="/users/1">
+          <img alt="Avatar image" class="media-object" src="images/raghu-avatar">
+        </a>
+        Raghu
+        5 months ago
+      </div>
+      <div> <!-- Photo image, caption, action links, and comments container -->
+        <div> <!-- Photo image and caption -->
+          <img alt="Pm" src="images/pm.jpg">
+          <div> <!-- Photo caption and action links -->
+            <p>Peyton Manning</p>
+            <p>
+              <a href="/photos/1">
+                Show Details
+              </a>
+              <a href="#">
+                Favorite
+              </a>
+              <a href="#">
+                Edit
+              </a>
+              <a href="#">
+                Delete
+              </a>
+            </p>
+          </div>
+        </div>
+        <ul> <!-- Comments list -->
+          <li>
+            <a href="/users/2">
+              <img alt="Avatar image" class="media-object" src="images/roneesh-avatar">
+            </a>
+            <p>Over the hill</p>
+          </li>
+          <li>
+            <a href="/users/1">
+              <img alt="Avatar image" class="media-object" src="images/raghu-avatar">
+            </a>
+            <p>Never!</p>
+          </li>
+          <li>
+            <!-- Form for new comment -->
+            <form action="#">
+              <input name="comment[content]" placeholder="Add a comment..." type="text">
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
